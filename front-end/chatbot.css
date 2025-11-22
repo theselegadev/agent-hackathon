@@ -27,7 +27,7 @@ img{
     justify-content: center;
     position: relative;
     height: 100px;
-    margin-top: 45%;
+    margin-top: 5%;
 }
 
 .caixaTexto input{
@@ -47,4 +47,14 @@ img{
     border-radius: 10px;
 }
 
+button{
+    padding-left: 50px;
+}
 
+.resposta{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 50%;
+    height: 60%;
+}

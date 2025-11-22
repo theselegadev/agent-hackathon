@@ -11,7 +11,7 @@
 <body>
     <form method="post">
         <div class="container">
-            <div class="conteudo">
+            <div class="conteudo" style="height: 800px;">
                 <h1 class="titleConteudo">Cadastre-se&nbsp;<span class="titleConteudoColor">aqui</span></h1>
                 <p class="textGray">Preencha os dados de login para acessar</p>
                 <div class="boxUser">
@@ -21,19 +21,34 @@
                     </div>
                 </div>
 
-                <div class="boxEmail">
-                    <label class="email">E-mail</label>
-                    <div class="inputBox">
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-                    </div>
-                </div>
-
                 <div class="boxSenha">
                     <label class="senha">Senha</label>
                     <div class="inputBox">
                         <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
                     </div>
                 </div>
+
+                <div class="boxNegocio">
+                    <label class="negocio">Nome da empresa</label>
+                    <div class="inputBox">
+                        <input type="empresa" name="empresa" id="empresa" placeholder="Digite o nome empresarial">
+                    </div>
+                </div>
+
+                <div class="boxAtividade">
+                    <label class="atividade">Atividade</label>
+                    <div class="inputBox">
+                        <input type="atividade" name="atividade" id="atividade" placeholder="Digite sua atividade">
+                    </div>
+                </div>
+
+                <div class="boxDescricao">
+                    <label class="descricao">Descricao</label>
+                    <div class="inputBox">
+                        <input type="descricao" name="descricao" id="descricao" placeholder="Digite a descricao da sua empresa">
+                    </div>
+                </div>
+
                 <input class="button" style="margin-bottom: 7%;" type="submit" name="logar" value="Cadastrar">
             </div>
         </div>
