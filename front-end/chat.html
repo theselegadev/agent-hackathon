@@ -3,30 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Transcrição de Áudio</title>
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
 
-  <h1>Transcrever áudio</h1>
-  <button id="btn">🎤 Falar</button>
-  <p id="texto"></p>
+    <div class="logo">
+        <img src="img/marca.png" alt="Logo">
+    </div>
 
-  <script>
-    const btn = document.getElementById("btn");
-    const texto = document.getElementById("texto");
-
-    const rec = new webkitSpeechRecognition(); 
-    rec.lang = "pt-BR";
-    rec.continuous = true;
-
-    btn.onclick = () => {
-      rec.start();
-    };
-
-    rec.onresult = (event) => {
-      const frase = event.results[event.resultIndex][0].transcript;
-      texto.textContent += " " + frase;
-    };
-  </script>
+    <div class="caixaTexto">
+        <input type="text" name="caixa" id="caixa" placeholder="Digite. . .">
+        <button id="btn">Voz</button>
+    </div>
 
 </body>
 </html>
