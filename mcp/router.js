@@ -1,6 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const port = 8082
+const app = express();
 
-router.post('/prompt',(req,res)=>{
+app.post('/prompt',(req,res)=>{
     res.send({message: "Prompt received", data: req.body.prompt});
 })
+
+app.listen(port)
