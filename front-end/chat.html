@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Transcrição de Áudio</title>
+</head>
+<body>
+
+  <h1>Transcrever áudio</h1>
+  <button id="btn">🎤 Falar</button>
+  <p id="texto"></p>
+
+  <script>
+    const btn = document.getElementById("btn");
+    const texto = document.getElementById("texto");
+
+    const rec = new webkitSpeechRecognition(); 
+    rec.lang = "pt-BR";
+    rec.continuous = true;
+
+    btn.onclick = () => {
+      rec.start();
+    };
+
+    rec.onresult = (event) => {
+      const frase = event.results[event.resultIndex][0].transcript;
+      texto.textContent += " " + frase;
+    };
+  </script>
+
+</body>
+</html>
