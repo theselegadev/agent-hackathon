@@ -1,0 +1,28 @@
+CREATE DATABASE api_agent;
+USE api_agent;
+
+CREATE TABLE user (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    senha VARCHAR(255)
+);
+
+CREATE TABLE negocio (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_user INT,
+    nome VARCHAR(100),
+    atuacao VARCHAR(100),
+    descricao TEXT,
+    FOREIGN KEY(id_user) REFERENCES user(id)
+);
+
+CREATE TABLE vendas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_negocio INT,
+    tipo ENUM('produto','servico'),
+    produto VARCHAR(100),
+    valor DOUBLE(10,2),
+    cliente VARCHAR(100),
+    data DATE,
+    FOREIGN KEY(id_negocio) REFERENCES negocio(id)
+);
