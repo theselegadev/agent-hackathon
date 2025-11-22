@@ -47,7 +47,9 @@ img{
     border-radius: 10px;
 }
 
-
+button{
+    padding-left: 50px;
+}
 
 .resposta{
     margin-left: auto;

@@ -79,7 +79,9 @@ html {
 
 .user,
 .senha,
-.email{
+.negocio,
+.atividade,
+.descricao{
     font-weight: bold;
     font-size: 18px;
     margin-top: 10%;
@@ -108,7 +110,7 @@ input {
     height: 300px;
 }
 
-.boxUser, .boxSenha, .boxEmail{
+.boxUser, .boxSenha, .boxNegocio, .boxAtividade, .boxDescricao{
     width: 70%;
     margin-top: 10%;
     margin-right: auto;
