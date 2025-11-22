@@ -8,12 +8,12 @@ router.post("/user",UserController.create)
 
 router.post("/login", UserController.login)
 
-router.get("/sale/:month/:idBusiness",AuthMiddleware,SalesController.getByMonth)
+router.get("/sale/:month/:idBusiness",SalesController.getByMonth)
 
-router.get("/sales/:idBusiness",AuthMiddleware,SalesController.getAll)
+router.get("/sales/:idBusiness",SalesController.getAll)
 
-router.post("/sale",AuthMiddleware,SalesController.create)
+router.post("/sale",SalesController.create)
 
-router.post("/filtersales/:idBusiness",AuthMiddleware,SalesController.filterSales)
+router.post("/filtersales/:idBusiness",SalesController.filterSales)
 
 module.exports = router

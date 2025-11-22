@@ -2,6 +2,7 @@ const db = require("../config/ConnectDB")
 
 class SalesRepository{
     static async create({idBusiness,type,product,value,client,date}){
+        
         const sql = `INSERT INTO vendas(id_negocio,tipo,produto,valor,cliente,data) VALUES (?,?,?,?,?,?)`
         
         try{
