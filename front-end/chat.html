@@ -12,10 +12,19 @@
         <img src="img/marca.png" alt="Logo">
     </div>
 
-    <div class="caixaTexto">
-        <input type="text" name="caixa" id="caixa" placeholder="Digite. . .">
-        <button id="btn">Voz</button>
+    <div class="resposta">
+      <p class="chat"></p>
     </div>
 
+    <div class="caixaTexto">
+        <input type="text" name="caixa" id="caixa" placeholder="Digite. . .">
+        <button onclick="absorve()" id="btn">Voz</button>
+        <button id="enviar">
+          <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2 L5 9 H10 V22 H14 V9 H19 L12 2 Z" fill="black"/>
+          </svg>
+        </button>
+    </div>
+      
 </body>
 </html>
